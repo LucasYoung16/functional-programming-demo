@@ -1,4 +1,3 @@
-import Distribution.Simple.PackageIndex (SearchResult(None))
 -- Write printAMessage here
 
 printAMessage :: Show a => a -> IO ()
@@ -30,4 +29,4 @@ merge (a:aList) (b:bList) | a < b = a : merge aList (b:bList)
                           | otherwise = b : merge (a:aList) bList
 
 
-main = print(merge [1,3,5] [2,4,6]) -- Replace this with your testing code
+main = print(factList 3) -- Replace this with your testing code
